@@ -16,10 +16,27 @@ body{
     height: 100vh;
 }
 
+.flex{
+    display: flex;
+}
+
 .interface{
     max-height: 1280px;
     margin: 0 auto;
 }
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(182, 0, 0, 0.904) ;
+    border: 0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+
 header > .interface{
     display: flex;
     align-content: center;
@@ -47,20 +64,59 @@ header nav ul li{
     padding: 0 40px;
 }
 
-header .btn-contato button{
-    padding: 10px 40px;
-    font-size: 20px;
-    font-weight: 600;
-    background-color: #21129e ;
-    border: 0;
-    cursor: pointer;
-    border-radius: 30px;
-}
 
-header .btn-contato button:hover{
-    box-shadow: 0px 1px 10px #01a2ff85;
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 1rem #ff3838;
+    transform: scale(1.0);
 }
 
 header img{
-    max-width: 100px;
+    max-width: 200px;
+}
+
+/*Estilo do topo do site*/
+section.top-site{
+    padding: 40px 4%;
+
+}
+
+section.top-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.top-site .txt-Site h1{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.top-site .txt-Site h1 span{
+    color: #920000;
+}
+
+.top-site .txt-Site p{
+    color: white;
+    margin: 40px 0px;
+}
+
+#homelander{ /*Sombra da imagem*/
+    filter: drop-shadow(0  0 2rem #580b01);
+} 
+
+
+.top-site .img-Top img{ /*adicionando a animacao da img*/
+    position: relative;
+    animation: imgflutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes imgflutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
 }
