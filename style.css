@@ -1,0 +1,66 @@
+*{  /*Configuracao global de estilizacao*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+header{ /*estilo do cabecalho*/
+    padding: 40px 4%;
+}
+
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-height: 1280px;
+    margin: 0 auto;
+}
+header > .interface{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.10);
+}
+
+header nav ul{
+    list-style-type: none
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #21129e ;
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 1px 10px #01a2ff85;
+}
+
+header img{
+    max-width: 100px;
+}
