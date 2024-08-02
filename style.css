@@ -224,3 +224,10 @@ section.sobre .flex{
     box-shadow: 0 10 red;
     transform: scale(1.10);
 }
+
+/*ESTIlo DO PORTFOLIo*/
+
+section.portfolio{
+    padding: 90px 4%;
+    box-shadow: 0 0 42px 10px #ffffff31;
+}
