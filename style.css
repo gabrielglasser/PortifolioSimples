@@ -45,7 +45,7 @@ h2.titulo span{
     transition: .5s;
 } 
 
-button:hover{
+button:hover, form .btn-submit input:hover{
     box-shadow: 0px 0px 1rem #ff3838;
     transform: scale(1.0);
 }
@@ -273,4 +273,50 @@ section.portfolio .flex{
 
 .over:hover{
     opacity: 1;
+}
+
+/*ESTILO DO FORMULARIO*/
+
+section.formulario{
+    padding: 100px 4%;
+}
+
+form{
+    max-width: 550px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 60px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #a3a3a35e;
+    outline: none;
+    border: none;
+    padding: 20px 14px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+form textarea{
+    resize: none;
+    height: 180px;
+    max-height: 240px;
+}
+
+form .btn-submit{
+    margin-top: 30px;
+    text-align: center;
+}
+
+form .btn-submit input[type=submit]{
+    width: 200px;
+    background-color: rgba(182, 0, 0, 0.904) ;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .2s;
 }
