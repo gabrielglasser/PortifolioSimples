@@ -1,4 +1,5 @@
-*{  /*Configuracao global de estilizacao*/
+* {
+    /*Configuracao global de estilizacao*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,75 +7,78 @@
 }
 
 
-header{ /*estilo do cabecalho*/
+header {
+    /*estilo do cabecalho*/
     padding: 40px 4%;
 }
 
 
-body{
+body {
     background-color: #000;
     height: 100vh;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.interface{
+.interface {
     max-height: 1280px;
     margin: 0 auto;
 }
-h2.titulo{
+
+h2.titulo {
     color: white;
     font-size: 36px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: red;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 20px;
     font-weight: 600;
-    background-color: rgba(182, 0, 0, 0.904) ;
+    background-color: rgba(182, 0, 0, 0.904);
     border: 0;
     cursor: pointer;
     border-radius: 10px;
     transition: .5s;
-} 
+}
 
-button:hover, form .btn-submit input:hover{
+button:hover,
+form .btn-submit input:hover {
     box-shadow: 0px 0px 1rem #ff3838;
     transform: scale(1.0);
 }
 
 
 /*CONFGI HEADER*/
-header > .interface{
+header>.interface {
     display: flex;
     align-content: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: rgb(124, 124, 124);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
-header a:hover{
+header a:hover {
     color: #fff;
     transform: scale(1.10);
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
@@ -82,66 +86,69 @@ header nav ul li{
 
 
 
-header img{
+header img {
     max-width: 200px;
 }
 
 /*Estilo do topo do site*/
-section.top-site{
+section.top-site {
     padding: 40px 4%;
 
 }
 
-section.top-site .flex{
+section.top-site .flex {
     align-items: center;
     justify-content: center;
     gap: 100px;
 }
 
-.top-site .txt-Site h1{
+.top-site .txt-Site h1 {
     color: white;
     font-size: 40px;
     line-height: 40px;
 }
 
-.top-site .txt-Site h1 span{
+.top-site .txt-Site h1 span {
     color: #920000;
 }
 
-.top-site .txt-Site p{
+.top-site .txt-Site p {
     color: white;
     margin: 40px 0px;
 }
 
-#homelander{ /*Sombra da imagem*/
-    filter: drop-shadow(0  0 2rem #580b01);
-} 
+#homelander {
+    /*Sombra da imagem*/
+    filter: drop-shadow(0 0 2rem #580b01);
+}
 
 
-.top-site .img-Top img{ /*adicionando a animacao da img*/
+.top-site .img-Top img {
+    /*adicionando a animacao da img*/
     position: relative;
     animation: imgflutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes imgflutuar{
-    0%{
+@keyframes imgflutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /*Estilos das especialidades*/
-section.especialidades{
+section.especialidades {
     padding: 200px 4%;
 }
 
-section.especialidades .flex{
+section.especialidades .flex {
     gap: 70px;
 }
 
-.especialidades .esp-box{
+.especialidades .esp-box {
     color: white;
     padding: 40px;
     margin-top: 44px;
@@ -149,12 +156,13 @@ section.especialidades .flex{
     transition: .2s;
 }
 
-.especialidades .esp-box:hover{
+.especialidades .esp-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.336);
 }
 
-.especialidades .esp-box img{ /*Config icone */
+.especialidades .esp-box img {
+    /*Config icone */
     width: 75px;
     color: white;
     background-color: rgba(255, 255, 255, 0.849);
@@ -162,42 +170,42 @@ section.especialidades .flex{
     padding: 5px;
 }
 
-.especialidades .esp-box h3{
+.especialidades .esp-box h3 {
     font-size: 26px;
     margin: 15px 0px;
 }
 
 /*ESTILO SOBRE*/
 
-section.sobre{
+section.sobre {
     padding: 80px 4%;
-    filter: drop-shadow(0  0 2rem #ff1e0069);
+    filter: drop-shadow(0 0 2rem #ff1e0069);
 }
 
-section.sobre img{
+section.sobre img {
     width: 350px;
     border-radius: 30px;
     margin-left: 50px;
 }
 
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 70px;
 }
 
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: white;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 42px;
     margin-bottom: 27px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: red;
     display: block;
 }
@@ -207,7 +215,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social a{
+.sobre .txt-sobre .btn-social a {
     text-decoration: none;
 }
 
@@ -220,24 +228,24 @@ section.sobre .flex{
     transition: .1s;
 }
 
-.sobre .txt-sobre .btn-social img:hover{
+.sobre .txt-sobre .btn-social img:hover {
     box-shadow: 0 10 red;
     transform: scale(1.10);
 }
 
 /*ESTIlo DO PORTFOLIo*/
 
-section.portfolio{
+section.portfolio {
     padding: 90px 4%;
     box-shadow: 0 0 40px 1px #d4d4d41a;
 }
 
-section.portfolio .flex{
+section.portfolio .flex {
     justify-content: space-around;
     margin-top: 100px;
 }
 
-.img-port{
+.img-port {
     width: 560px;
     height: 360px;
     background-size: cover;
@@ -248,11 +256,11 @@ section.portfolio .flex{
     position: relative;
 }
 
-.img-port:hover{
+.img-port:hover {
     background-position: 100% 100%;
 }
 
-.over{
+.over {
     position: absolute;
     top: 0;
     left: 0;
@@ -271,17 +279,17 @@ section.portfolio .flex{
 
 }
 
-.over:hover{
+.over:hover {
     opacity: 1;
 }
 
 /*ESTILO DO FORMULARIO*/
 
-section.formulario{
+section.formulario {
     padding: 100px 4%;
 }
 
-form{
+form {
     max-width: 550px;
     display: flex;
     margin: 0 auto;
@@ -291,7 +299,8 @@ form{
     margin-top: 60px;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     width: 100%;
     background-color: #a3a3a35e;
     outline: none;
@@ -302,27 +311,27 @@ form input, form textarea{
     font-size: 16px;
 }
 
-form textarea{
+form textarea {
     resize: none;
     height: 180px;
     max-height: 240px;
 }
 
-form .btn-submit{
+form .btn-submit {
     margin-top: 30px;
     text-align: center;
 }
 
-form .btn-submit input[type=submit]{
+form .btn-submit input[type=submit] {
     width: 200px;
-    background-color: rgba(182, 0, 0, 0.904) ;
+    background-color: rgba(182, 0, 0, 0.904);
     font-weight: 800;
     cursor: pointer;
     transition: .2s;
 }
 
 /*ESTILO FOOTER*/
-.logo-footer img{
+.logo-footer img {
     max-width: 280px;
 }
 
@@ -334,41 +343,140 @@ form .btn-submit input[type=submit]{
     padding: 10px;
     transition: .1s;
 }
+
 .interface .lineone .flex .btn-social a {
     text-decoration: none;
 }
 
-.img-email{
+.img-email {
     max-width: 30px;
-    background-color:rgba(255, 255, 255, 0.849) ;
+    background-color: rgba(255, 255, 255, 0.849);
     padding: 2px;
     border-radius: 10px;
 }
 
-footer{
+footer {
     padding: 60px 4%;
     box-shadow: 0 0 40px 1px #d4d4d41a;
 }
 
-footer .flex{
+footer .flex {
     justify-content: space-between;
 }
 
-footer .lineone{
+footer .lineone {
     padding: 40px 0;
 }
 
-.borda{
+.borda {
     border-top: 2px solid red;
 }
 
-footer .lineone p{
+footer .lineone p {
     color: red;
     font-size: 20px;
 }
-footer .lineone p a{
+
+footer .lineone p a {
     color: #fff;
     text-decoration: none;
     margin: 10px;
 }
 
+@media screen and (max-width: 1030px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .menu-desk,
+    .btn-contato {
+        display: none;
+    }
+
+    .top-site h1 {
+        font-size: 30px;
+    }
+
+    section.top-site {
+        padding: 20px 7%
+    }
+
+    .top-site .img-Top img {
+        width: 100%;
+    }
+
+    section.top-site .flex {
+        gap: 0px;
+    }
+
+    /*Especialidades*/
+    section.especialidades{
+        padding: 40x 7%;
+    }
+
+    /*sobre*/
+    section.sobre{
+        padding: 7%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre .btn-social img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.849);
+        padding: 2px;
+        transition: .1s;
+        margin: 15px;
+    }
+    .sobre .txt-sobre .btn-social{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    section.sobre img{
+        width: 100%;
+        margin: auto;
+    }
+
+    /*portifolio*/
+
+    .section.portfolio{
+        padding: 80px 7%;
+    }
+
+    .img-port {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        transition: 5s;
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+        margin: 10px auto;
+    }
+
+    /*footer*/
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .lineone{
+        text-align: center;
+    }
+
+
+}
